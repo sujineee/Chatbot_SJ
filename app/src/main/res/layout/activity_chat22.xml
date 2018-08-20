@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatActivity_TT4_ForVoice">
+
+    <ListView
+        android:id="@+id/list_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btVoice"
+        android:divider="#000000"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"></ListView>
+    //textview 대신 listview
+
+
+    <ImageButton
+        android:id="@+id/btVoice"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/btSend"
+        android:background="@drawable/microphone"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+
+    <Button
+        android:id="@+id/btSend"
+        style="@android:style/Widget.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="보내기" />
+
+    <EditText
+        android:id="@+id/msg_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btVoice"
+
+        android:layout_toLeftOf="@+id/btSend"
+
+        android:background="@drawable/round" />
+
+
+
+
+
+</RelativeLayout>
